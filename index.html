@@ -26,24 +26,23 @@
 			<h2>Coding Semantic and Accessible Forms!</h2>
 			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
 
-<!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
 			<form action="/action_page.php" method="get" autocomplete="on">
 				<label for="fullName">Full Name<span class="required">*</span></label>
 				<input type="text" id="fullName">
-				
-				<label for email="email">Email<span class="required">*</span></label>
-					<input type="email" id="email" name="email">
-				
+
 				<label for="phone">Phone<span class="required">*</span> </label>
-					<input id="tel" name="tel" type="tel">
+					<input id="phone" name="tel" type="tel">
+				
+				<label for="email">Email<span class="required">*</span></label>
+					<input type="email" id="email" name="email">
 
 			<fieldset>
 				<legend>Preferred Contact Method<span class="required">*</span></legend>
-				<input type="radio" id="contactMethodEmail" name="contactMethod" value="email">
-					<label for="contactMethodEmail">Phone</label>
-			
 				<input type="radio" id="contactMethodPhone" name="contactMethod" value="phone">
-					<label for="contactMethodPhone">Email</label>
+					<label for="contactMethodPhone">Phone</label>
+			
+				<input type="radio" id="contactMethodEmail" name="contactMethod" value="email">
+					<label for="contactMethodEmail">Email</label>
 			</fieldset>
 
 			<label for="message">Message<span class="required">*</span>
